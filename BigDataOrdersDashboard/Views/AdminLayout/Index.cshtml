@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html class="no-js " lang="en">
+@await Component.InvokeAsync("_AdminLayoutHeadCompponentPartial")
+
+<body class="theme-orange">
+    <!-- Page Loader -->
+    @await Component.InvokeAsync("_AdminLayoutPageLoaderComponentResult")
+    
+
+   
+
+    <!-- Top Bar -->
+    @await Component.InvokeAsync("_AdminLayoutNavbarComponentPartial")
+   
+    
+
+    <!-- Left Sidebar --> 
+    @await Component.InvokeAsync("_AdminLayoutSidebarCompponentPartial")
+    
+
+
+
+    </br>
+     @RenderBody()
+    <!-- Jquery Core Js -->
+    
+    @await Component.InvokeAsync("_AdminLayoutScriptsCompponentPartial")
+    
+</body>
+</html>

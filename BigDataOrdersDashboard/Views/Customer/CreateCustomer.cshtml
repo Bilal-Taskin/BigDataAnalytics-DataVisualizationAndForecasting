@@ -1,0 +1,78 @@
+﻿@model Customer
+@{
+    ViewData["Title"] = "CreateCustomer";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+
+
+<section class="content">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <h2>
+                    Create Customer
+                    <small class="text-muted">Customer Operations List</small>
+                </h2>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <ul class="breadcrumb float-md-right">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> Customer</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0);">Customer List</a></li>
+                    <li class="breadcrumb-item active">Main Page</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="body">
+
+                        <form method="post">
+                            <label>Customer Name</label>
+                            <input type="text" asp-for="CustomerName" class="form-control" />
+                            </br>
+                            <label>Customer Description</label>
+                            <input type="text" asp-for="CustomerSurname" class="form-control" />
+                            </br>
+                            <label>Email</label>
+                            <input type="email" asp-for="CustomerEmail" class="form-control " />
+                            </br>
+                            <label>Phone Number</label>
+                            <input type="tel" asp-for="CustomerPhone" class="form-control" />
+                            </br>
+                            <label>Country</label>
+                            <input type="text" asp-for="CustomerCountry" class="form-control" />
+                            </br>
+                            <label>City</label>
+                            <input type="text" asp-for="CustomerCity" class="form-control" />
+                            </br>
+                            <label>District</label>
+                            <input type="tel" asp-for="CustomerDistrict" class="form-control" />
+                            </br>
+                            <label>Address</label>
+                            <input type="tel" asp-for="CustomerAddress" class="form-control" />
+                            </br>
+                            <label>Image Url</label>
+                            <input type="tel" asp-for="CustomerImageUrl" class="form-control" />
+                            </br>
+                            <button class="btn btn-info">Create The Customer</button>
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+

@@ -1,0 +1,41 @@
+﻿@model List<Category>
+@{
+    ViewData["Title"] = "CategoryList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+<section class="content">
+
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="body">
+
+                        <table class="table table-bordered">
+                            <tr>>
+                                <th>#</th>
+                                <th>Category Name</th>
+                                <th>Delete</th>
+                                <th>Update</th>
+                            </tr>
+                            @foreach(var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.CategoryId</td>
+                                    <td>@item.CategoryName</td>
+                                    <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Delete</a></td>
+                                    <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-success">Update</a></td>
+                                </tr>
+                            }
+                        </table>
+
+                        <a href="/Category/CreateCategory/" class="btn btn-primary">Create New Category</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
