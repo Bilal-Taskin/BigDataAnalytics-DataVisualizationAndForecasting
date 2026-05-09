@@ -5,312 +5,40 @@
 
 <section class="content">
     @await Component.InvokeAsync("_DashboardBlockHeaderComponentPartial")
-    
-    
- 
+
     <div class="container-fluid">
         @await Component.InvokeAsync("_DashboardFirstChartsComponentPartial")
-       
-      
-        <br/>
+        <br />
 
         <div class="row clearfix">
 
             @await Component.InvokeAsync("_DashboardMainChartComponentPartial")
-           
+
             @await Component.InvokeAsync("_DashboardKpiComponentPartial")
-           
-           
+
         </div>
+
         @await Component.InvokeAsync("_DashboardSubStatisticsComponentPartial")
-       
-       
+
         @await Component.InvokeAsync("_DashboradMapComponentPartial")
 
         <br />
 
         <div class="row clearfix">
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="card ">
-                    <div class="header">
-                        <h2>Recent Messages</h2>
-                        <ul class="header-dropdown m-r--5">
-                            <li class="dropdown">
-                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more-vert"></i> </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <ul class="inbox-widget list-unstyled clearfix">
-                            <li class="inbox-inner">
-                                <a href="javascript:void(0);">
-                                    <div class="inbox-item">
-                                        <div class="inbox-img"> <img src="assets/images/xs/avatar3.jpg" alt=""> </div>
-                                        <div class="inbox-item-info">
-                                            <p class="author">John Doe</p>
-                                            <p class="inbox-message">Lorem Ipsum is simply dummy text of the been the industry's</p>
-                                            <p class="inbox-date">12:34 PM</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="inbox-inner">
-                                <a href="javascript:void(0);">
-                                    <div class="inbox-item">
-                                        <div class="inbox-img"> <img src="assets/images/xs/avatar2.jpg" alt=""> </div>
-                                        <div class="inbox-item-info">
-                                            <p class="author">Scarlett</p>
-                                            <p class="inbox-message">Lorem Ipsum is simply dummyLorem Ipsum has been the industry's</p>
-                                            <p class="inbox-date">10:34 AM</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="inbox-inner">
-                                <a href="javascript:void(0);">
-                                    <div class="inbox-item">
-                                        <div class="inbox-img"> <img src="assets/images/xs/avatar4.jpg" alt=""> </div>
-                                        <div class="inbox-item-info">
-                                            <p class="author">Elizabeth</p>
-                                            <p class="inbox-message">text of the printing and  has been the industry's</p>
-                                            <p class="inbox-date">15:34 PM</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="inbox-inner">
-                                <a href="javascript:void(0);">
-                                    <div class="inbox-item">
-                                        <div class="inbox-img"> <img src="assets/images/xs/avatar5.jpg" alt=""> </div>
-                                        <div class="inbox-item-info">
-                                            <p class="author">Nicholas</p>
-                                            <p class="inbox-message">simply dummy text of the printing and typesetting industry's</p>
-                                            <p class="inbox-date">11:10 AM</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="inbox-inner">
-                                <a href="javascript:void(0);">
-                                    <div class="inbox-item">
-                                        <div class="inbox-img"> <img src="assets/images/xs/avatar1.jpg" alt=""> </div>
-                                        <div class="inbox-item-info">
-                                            <p class="author">Cameron</p>
-                                            <p class="inbox-message">text of the industry. Lorem Ipsum has been the industry's</p>
-                                            <p class="inbox-date">18:45 PM</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card activities">
-                    <div class="header">
-                        <h2>Activities</h2>
-                        <ul class="header-dropdown m-r--5">
-                            <li class="dropdown">
-                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more-vert"></i> </a>
-                                <ul class="dropdown-menu slideUp ">
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
-                                    <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <div class="streamline b-l b-accent">
-                            <div class="sl-item">
-                                <div class="sl-content">
-                                    <div class="text-muted-dk">Just now</div>
-                                    <p>Finished task <a href="" class="text-info">#features 4</a>.</p>
-                                </div>
-                            </div>
-                            <div class="sl-item b-info">
-                                <div class="sl-content">
-                                    <div class="text-muted-dk">11:30</div>
-                                    <p><a href="">@@Jessi</a> retwit your post</p>
-                                </div>
-                            </div>
-                            <div class="sl-item b-primary b-l">
-                                <div class="sl-content">
-                                    <div class="text-muted-dk">10:30</div>
-                                    <p>Call to customer <a href="" class="text-info">Jacob</a> and discuss the detail.</p>
-                                </div>
-                            </div>
-                            <div class="sl-item b-warning">
-                                <div class="sl-content">
-                                    <div class="text-muted-dk">3 days ago</div>
-                                    <p><a href="" class="text-info">Jessi</a> commented your post.</p>
-                                </div>
-                            </div>
-                            <div class="sl-item b-primary b-l">
-                                <div class="sl-content">
-                                    <div class="text-muted-dk">10:30</div>
-                                    <p>Call to customer <a href="" class="text-info">Jacob</a> and discuss the detail.</p>
-                                </div>
-                            </div>
-                            <div class="sl-item b-primary b-l">
-                                <div class="sl-content">
-                                    <div class="text-muted-dk">10:30</div>
-                                    <p>Call to customer <a href="" class="text-info">Jacob</a> and discuss the detail.</p>
-                                </div>
-                            </div>
-                            <div class="sl-item b-warning">
-                                <div class="sl-content">
-                                    <div class="text-muted-dk">3 days ago</div>
-                                    <p><a href="" class="text-info">Jessi</a> commented your post.</p>
-                                </div>
-                            </div>
-                            <div class="sl-item b-primary b-l">
-                                <div class="sl-content">
-                                    <div class="text-muted-dk">10:30</div>
-                                    <p>Call to customer <a href="" class="text-info">Jacob</a> and discuss the detail.</p>
-                                </div>
-                            </div>
-                            <div class="sl-item b-primary b-l">
-                                <div class="sl-content">
-                                    <div class="text-muted-dk">10:30</div>
-                                    <p>Call to customer <a href="" class="text-info">Jacob</a> and discuss the detail.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="header">
-                        <h2>Browser Usage</h2>
-                        <ul class="header-dropdown m-r--5">
-                            <li class="dropdown">
-                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="zmdi zmdi-more-vert"></i> </a>
-                                <ul class="dropdown-menu slideUp ">
-                                    <li><a href="javascript:void(0);">Action</a></li>
-                                    <li><a href="javascript:void(0);">Another action</a></li>
-                                    <li><a href="javascript:void(0);">Something else</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <div id="donut_chart" class="dashboard-donut-chart"></div>
-                        <table class="table m-t-15 m-b-0">
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Chrome</td>
-                                    <td>6985</td>
-                                    <td><i class="zmdi zmdi-caret-up text-success"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Other</td>
-                                    <td>2697</td>
-                                    <td><i class="zmdi zmdi-caret-up text-success"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Safari</td>
-                                    <td>3597</td>
-                                    <td><i class="zmdi zmdi-caret-down text-danger"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Firefox</td>
-                                    <td>2145</td>
-                                    <td><i class="zmdi zmdi-caret-up text-success"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Opera</td>
-                                    <td>1854</td>
-                                    <td><i class="zmdi zmdi-caret-down text-danger"></i></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+
+            @await Component.InvokeAsync("_DashboardLast5ReviewComponentPartial")
+
+            @await Component.InvokeAsync("_DashboardLowProductsComponentPartial")
+
+            @await Component.InvokeAsync("_DashboardCountryStatisticsComponentPartial")
+
         </div>
-        <div class="row clearfix social-widget">
-            <div class="col-xl-2 col-lg-4 col-md-4 col-6">
-                <div class="card info-box-2 hover-zoom-effect facebook-widget">
-                    <div class="icon"><i class="zmdi zmdi-facebook"></i></div>
-                    <div class="content">
-                        <div class="text">Like</div>
-                        <div class="number">123</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-4 col-6">
-                <div class="card info-box-2 hover-zoom-effect instagram-widget">
-                    <div class="icon"><i class="zmdi zmdi-instagram"></i></div>
-                    <div class="content">
-                        <div class="text">Followers</div>
-                        <div class="number">231</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-4 col-6">
-                <div class="card info-box-2 hover-zoom-effect twitter-widget">
-                    <div class="icon"><i class="zmdi zmdi-twitter"></i></div>
-                    <div class="content">
-                        <div class="text">Followers</div>
-                        <div class="number">31</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-4 col-6">
-                <div class="card info-box-2 hover-zoom-effect google-widget">
-                    <div class="icon"><i class="zmdi zmdi-google"></i></div>
-                    <div class="content">
-                        <div class="text">Like</div>
-                        <div class="number">254</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-4 col-6">
-                <div class="card info-box-2 hover-zoom-effect linkedin-widget">
-                    <div class="icon"><i class="zmdi zmdi-linkedin"></i></div>
-                    <div class="content">
-                        <div class="text">Followers</div>
-                        <div class="number">2510</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-4 col-6">
-                <div class="card info-box-2 hover-zoom-effect behance-widget">
-                    <div class="icon"><i class="zmdi zmdi-behance"></i></div>
-                    <div class="content">
-                        <div class="text">Project</div>
-                        <div class="number">121</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+
+
         @await Component.InvokeAsync("_DashboardTodayOrdersComponentParrtial")
-        
-        <div class="row clearfix">
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="body">
-                        <p class="m-b-0">© 2017 Nexa Admin by <a href="http://thememakker.com/" target="black">ThemeMakker</a> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 
-    
+
 </section>
 
