@@ -34,7 +34,7 @@ namespace BigDataOrdersDashboard.ViewComponents.DashboardViewComponents
                     Quantity =  o.Quantity,
                     PaymentMethod = o.PaymentMethod,
                     OrderStatus = o.OrderStatus,
-                    UnitPrice = o.Product.UnitPrice
+                    UnitPrice = (decimal)o.Product.UnitPrice
                 })
                 .ToList();
             return View(last10Orders);

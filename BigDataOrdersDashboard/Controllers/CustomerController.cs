@@ -78,10 +78,13 @@ namespace BigDataOrdersDashboard.Controllers
             value.CustomerCountry = Customer.CustomerCountry;
             value.CustomerDistrict = Customer.CustomerDistrict;
             value.CustomerImageUrl = Customer.CustomerImageUrl;
-            
+            value.CustomerDescription = Customer.CustomerDescription;
+
             _bigDataOrdersDbContext.Update(value);
             _bigDataOrdersDbContext.SaveChanges();
             return RedirectToAction("CustomerList");
         }
     }
 }
+
+

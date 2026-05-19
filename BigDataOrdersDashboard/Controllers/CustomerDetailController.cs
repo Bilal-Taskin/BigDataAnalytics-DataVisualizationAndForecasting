@@ -2,7 +2,7 @@
 
 namespace BigDataOrdersDashboard.Controllers
 {
-    public class AdminLayoutController : Controller
+    public class CustomerDetailController : Controller
     {
         public IActionResult Index()
         {
@@ -10,6 +10,3 @@ namespace BigDataOrdersDashboard.Controllers
         }
     }
 }
-
-
-

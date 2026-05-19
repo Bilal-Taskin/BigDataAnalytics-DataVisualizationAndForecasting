@@ -1,0 +1,269 @@
+﻿<div class="row d-flex flex-wrap clearfix">
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4 d-flex flex-column justify-content-between">
+                <div class="customer-profile-box w-100">
+                    @Html.Raw(ViewBag.AnalysisSection1)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4 ai-product-preferences">
+                @Html.Raw(ViewBag.AnalysisSection2)
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4">
+                @Html.Raw(ViewBag.AnalysisSection3)
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4">
+                @Html.Raw(ViewBag.AnalysisSection4)
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4">
+                @Html.Raw(ViewBag.AnalysisSection5)
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4">
+                @Html.Raw(ViewBag.AnalysisSection6)
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    /* ---------------------------------------------------
+           Ürün Tercihleri Kartını İkiye Bölme Sihri
+           --------------------------------------------------- */
+    .ai-product-preferences {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+    }
+
+        .ai-product-preferences h4 {
+            grid-column: span 2;
+        }
+
+        /* "Öne çıkan ürünler:" başlığı */
+        .ai-product-preferences p {
+            grid-column: 2;
+            grid-row: 2;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 15.5px; /* Yazı boyutu büyütüldü */
+        }
+
+        .ai-product-preferences ul:nth-of-type(1) {
+            grid-column: 1;
+            grid-row: 2 / span 2;
+        }
+
+        .ai-product-preferences ul:nth-of-type(2) {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+    /* ---------------------------------------------------
+           Genel Tasarım ve Yazı Boyutu Ayarları (Can Alıcı Nokta)
+           --------------------------------------------------- */
+
+    /* Kartların içindeki genel düz yazılar ve p etiketleri */
+    .card p {
+        font-size: 15.5px; /* Standart 13px-14px değerinden daha okunaklı bir boyuta çekildi */
+        line-height: 1.6; /* Satır arası boşluk rahatlatıldı */
+        color: #444;
+    }
+
+    /* Müşteri profili kartındaki satırlar */
+    .customer-profile-box p {
+        background: #f8f9fa;
+        padding: 12px 18px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-left: 4px solid #007bff;
+        font-size: 15.5px; /* Profil bilgileri büyütüldü */
+    }
+
+    /* Ana Başlıklar (<h4>) */
+    .card h4 {
+        color: #222;
+        font-weight: 600;
+        margin-bottom: 18px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 12px;
+        font-size: 19px; /* Başlıklar da metinlere oranla hafifçe dengelendi */
+    }
+
+    /* Kartların içindeki tüm listeler (Maddeler) */
+    .card ul {
+        padding-left: 20px;
+    }
+
+        .card ul li {
+            margin-bottom: 8px;
+            color: #444;
+            font-size: 15px; /* Liste elemanlarının boyutu büyütüldü */
+            line-height: 1.5;
+        }
+</style>
+
+
+@* <div class="row d-flex flex-wrap clearfix">
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4 d-flex flex-column justify-content-between">
+                <div class="customer-profile-box w-100">
+                    @Html.Raw(ViewBag.AnalysisSection1)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4 ai-product-preferences">
+                @Html.Raw(ViewBag.AnalysisSection2)
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4">
+                @Html.Raw(ViewBag.AnalysisSection3)
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4">
+                @Html.Raw(ViewBag.AnalysisSection4)
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4">
+                @Html.Raw(ViewBag.AnalysisSection5)
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4 d-flex align-items-stretch">
+        <div class="card w-100 h-100 shadow-sm border-0">
+            <div class="body p-4">
+                @Html.Raw(ViewBag.AnalysisSection6)
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    /* ---------------------------------------------------
+           Ürün Tercihleri Kartını İkiye Bölme Sihri (Can Alıcı Nokta)
+           --------------------------------------------------- */
+    .ai-product-preferences {
+        display: flex;
+        flex-direction: column;
+    }
+
+        /* Yapay zekadan gelen başlığı en üste tam genişlikte sabitliyoruz */
+        .ai-product-preferences h4 {
+            width: 100%;
+        }
+
+    /* Kartın içindeki tüm listeleri ve ara başlıkları (Öne çıkan ürünler yazısını)
+           yan yana dizebilmek için Flexbox sarmalayıcı uyguluyoruz */
+    .ai-product-preferences {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Kartı tam ortadan iki eşit sütuna böler */
+        column-gap: 20px; /* Sütunlar arasında nefes alacak bir boşluk */
+    }
+
+        /* H4 başlığının grid sistemini bozup satırı kaplaması için */
+        .ai-product-preferences h4 {
+            grid-column: span 2;
+        }
+
+        /* "Öne çıkan ürünler:" yazısını sağ sütunun başına taşımak için */
+        .ai-product-preferences p {
+            grid-column: 2;
+            grid-row: 2;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* İlk liste (Kategoriler) sol sütuna (1. sütun) yerleşir */
+        .ai-product-preferences ul:nth-of-type(1) {
+            grid-column: 1;
+            grid-row: 2 / span 2; /* Başlığın altından başlayıp aşağı uzanır */
+        }
+
+        /* İkinci liste (Öne Çıkan Ürünler) sağ sütuna (2. sütun) yerleşir */
+        .ai-product-preferences ul:nth-of-type(2) {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+    /* ---------------------------------------------------
+           Genel Dashboard Süslemeleri
+           --------------------------------------------------- */
+    .customer-profile-box p {
+        background: #f8f9fa;
+        padding: 10px 15px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-left: 4px solid #007bff;
+        font-size: 14px;
+    }
+
+    .card h4 {
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .card ul {
+        padding-left: 15px;
+    }
+
+        .card ul li {
+            margin-bottom: 6px;
+            color: #555;
+            font-size: 13.5px;
+        }
+</style> *@
